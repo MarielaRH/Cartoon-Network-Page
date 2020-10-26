@@ -1,14 +1,17 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Acme", sans-serif;
 }
 
-body {
+html, body {
   background-image: linear-gradient(109.6deg, #169bd7 11.2%, #222d65 99.8%);
+  height: 100%;
 }
 
 .header {
   width: 100%;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,6 +59,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
+  padding: 3px;
 }
 
 .menu__item img {
@@ -65,7 +69,7 @@ body {
 }
 
 .menu__item span {
-  font: 90% "Acme", sans-serif;
+  font-size: 14px;
   color: black;
   font-weight: bold;
 }
@@ -73,5 +77,87 @@ body {
 .menu__item:hover {
   background-color: rgba(252, 252, 252, 0.9);
   cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.footer .info__general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .info__general img {
+  width: 100px;
+  height: 50px;
+  margin: 20px 20px;
+}
+
+.footer .info__general div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.footer .info__general div p {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
+
+.footer .atencion__usuario {
+  margin: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .atencion__usuario a {
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0px 15px;
+}
+
+.footer .atencion__usuario a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 /*# sourceMappingURL=styles.css.map */
